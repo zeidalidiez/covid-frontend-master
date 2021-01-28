@@ -1,7 +1,6 @@
 .loginPage{
     display: flex;
     width: 100%;
-    background-image: url(/static/media/backgroundpicture.959c450b.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
