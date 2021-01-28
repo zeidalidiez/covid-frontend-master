@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import RegisterForm from '../../Components/RegisterForm/RegisterForm'
 import './RegisterPage.css'
 
-export default class Register extends Component {
+export default class RegisterPage extends Component {
     static defaultProps = {
         history: {
             push: () => { },
