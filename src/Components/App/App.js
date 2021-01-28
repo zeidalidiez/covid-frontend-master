@@ -37,7 +37,7 @@ export default class App extends Component {
         <header className='Nav-header'>
           <NavBar />
         </header>
-        <main role='main' className='vinyl-main'>
+        <main role='main' className='zeid-main'>
           {this.state.hasError && <p className='red'>There was an error!</p>}
           <Switch>
             <Route exact path='/' component={LandingPage} />

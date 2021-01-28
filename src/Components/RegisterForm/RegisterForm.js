@@ -57,7 +57,7 @@ export default class RegisterForm extends Component {
                         </label>
                         <input
                             type='text'
-                            placeholder='First'
+                            placeholder='First Name...'
                             name='first_name'
                             required
 
@@ -67,7 +67,7 @@ export default class RegisterForm extends Component {
                         </label>
                         <input
                             type='text'
-                            placeholder='Last'
+                            placeholder='Last Name...'
                             name='last_name'
                             required
 
@@ -77,7 +77,7 @@ export default class RegisterForm extends Component {
                         </label>
                         <input
                             type='text'
-                            placeholder='First_Last...'
+                            placeholder='Username...'
                             name='user_name'
                             required
                         />
@@ -104,7 +104,7 @@ export default class RegisterForm extends Component {
                         </label>
                         <input
                             type='email'
-                            placeholder='First@gmail.com'
+                            placeholder='youremail@email.com'
                             name='email'
                             required
                         />

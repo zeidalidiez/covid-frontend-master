@@ -53,7 +53,7 @@ export default function LoginForm(props) {
                     </label>
                 <input
                     type='text'
-                    placeholder='Cody_Gill...'
+                    placeholder='Your Name Here...'
                     name='user_name'
                     value={user_name}
                     onChange={e => setUser_name(e.target.value)}
@@ -61,7 +61,7 @@ export default function LoginForm(props) {
                 />
                 <label className='Password'>
                     Password
-                    </label>
+                </label>
                 <input
                     type='password'
                     name='password'
@@ -72,10 +72,10 @@ export default function LoginForm(props) {
                 <div className='submit-login-section'>
                     <Link to='/Register'>
                         Register
-                        </Link>
+                    </Link>
                     <button type='submit'>
                         Login
-                        </button>
+                    </button>
                 </div>
             </form>
             </div>

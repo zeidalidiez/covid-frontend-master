@@ -11,7 +11,9 @@ export default class WalkerPage extends Component {
                 <section className='Walker-section'>
 
                     <h1>Pick Your Dog Walker</h1>
-                    <p> Next day appointments only!</p>
+                    <p> We have a large team to accomodate you!</p>
+                    <p>Our service provides you with a caring team,</p>
+                    <p>Trusted Walkers, and hygienic COVID practices.</p>
                     <WalkerList />
                 </section>
             </div>
