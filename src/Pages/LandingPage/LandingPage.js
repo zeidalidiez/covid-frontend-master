@@ -4,7 +4,7 @@ import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
 import { Link, Redirect } from 'react-router-dom'
 
-export default function Landingpage(){
+export default function LandingPage() {
   // eslint-disable-next-line no-unused-vars
   const userContext = useContext(UserContext)
     return (
