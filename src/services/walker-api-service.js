@@ -1,9 +1,9 @@
 import config from '../config'
 import TokenService from './token-service'
 
-const BarberApiService = {
-    getAllBarbers(){
-        return fetch(`${config.API_ENDPOINT}/barber`,{
+const WalkerApiService = {
+    getAllWalkers(){
+        return fetch(`${config.API_ENDPOINT}/walker`,{
             headers:{     
             },
         })
@@ -13,8 +13,8 @@ const BarberApiService = {
                   :res.json()
             )
     },
-    getBarber(barberId){
-        return fetch(`${config.API_ENDPOINT}/barber/${barberId}`,{
+    getWalker(walkerId){
+        return fetch(`${config.API_ENDPOINT}/walker/${walkerId}`,{
             headers:{
                 'Authorization': `bearer ${TokenService.getAuthToken()}`
             },
@@ -26,7 +26,7 @@ const BarberApiService = {
         )
     },
 
-    getBarberServices(){
+    getWalkerServices(){
         return fetch(`${config.API_ENDPOINT}/services`,{
         headers:{
             },
@@ -39,4 +39,4 @@ const BarberApiService = {
     }
 }
 
-export default BarberApiService
+export default WalkerApiService

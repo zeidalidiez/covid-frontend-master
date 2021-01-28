@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 
-import BarberListContext from '../../contexts/BarberListContext'
-import Barber from '../Barber/Barber'
-import BarberApiService from '../../services/barber-api-service'
-import { Spinner } from '../../Components/Utilitys/Utils'
+import WalkerListContext from '../../contexts/WalkerListContext'
+import Walker from '../Walker/Walker'
+import WalkerApiService from '../../services/walker-api-service'
+import { Spinner } from '../Utilitys/Utils'
 
-export default class BarberList extends Component {
-    static contextType = BarberListContext
+export default class WalkerList extends Component {
+    static contextType = WalkerListContext
     state = {
         error: null,
         loader: true
     }
     componentDidMount() {
-        BarberApiService.getAllBarbers()
+        WalkerApiService.getAllWalkers()
             .then(data => {
-                this.context.setBarberList(data)
+                this.context.setWalkerList(data)
                 this.setState({
                     loader: false
                 })
@@ -30,12 +30,12 @@ export default class BarberList extends Component {
     wait = async (milliseconds = 2000) => {
         await this.sleep(milliseconds);
     };
-    renderBarbers() {
-        const { barberList = [] } = this.context
-        return barberList.map(barber =>
-            <Barber
-                key={barber.id}
-                barber={barber}
+    renderWalkers() {
+        const { walkerList = [] } = this.context
+        return walkerList.map(walker =>
+            <Walker
+                key={walker.id}
+                walker={walker}
             />
         )
     }
@@ -43,10 +43,10 @@ export default class BarberList extends Component {
         const { error } = this.context
         return (
             <div>
-                {this.state.loader ? <Spinner /> : <ul className='BarberList'>
+                {this.state.loader ? <Spinner /> : <ul className='WalkerList'>
                     {error ?
                         <p >There was and error,try again later</p>
-                        : this.renderBarbers()}
+                        : this.renderWalkers()}
                 </ul>}
             </div>
         )

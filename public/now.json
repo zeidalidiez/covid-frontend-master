@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "vinyl-rock-barbershop",
+    "name": "covid-frontend-master",
     "routes": [
         {
             "src": "^/static/(.*)",

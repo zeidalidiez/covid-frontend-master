@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
-import BarberApiService from '../../services/barber-api-service';
+import WalkerApiService from '../../services/walker-api-service';
 import { Link } from 'react-router-dom'
 import './Utils.css'
 
 export class ServiceButtons extends Component {
     state = {
-        barberServices: [],
+        walkerServices: [],
         error:null,
     }
     componentDidMount() {
-        BarberApiService.getBarberServices()
+        WalkerApiService.getWalkerServices()
             .then(services => {
-                return this.setState({ barberServices: services })
+                return this.setState({ walkerServices: services })
 
             })
     }
@@ -22,12 +22,12 @@ export class ServiceButtons extends Component {
     }
 
     renderServices() {
-        return this.state.barberServices.map(barber => {
+        return this.state.walkerServices.map(walker => {
             return <button className='service-buttons'
-                onClick={(e) => this.handleSelectServiceType(e, barber)}
-                key={barber.id} >
-                <h3>{barber.type}</h3>
-                <p>{barber.price} 45min</p>
+                onClick={(e) => this.handleSelectServiceType(e, walker)}
+                key={walker.id} >
+                <h3>{walker.type}</h3>
+                <p>{walker.price} 45min</p>
             </button>
         })
     }
@@ -126,8 +126,8 @@ export class SideNavDrawer extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Barbers">
-                            Barbers
+                        <Link to="/Walkers">
+                            Walkers
                         </Link>
                     </li>
                     <li>
@@ -168,11 +168,11 @@ export class Backdrop extends Component {
 export function ServiceList(props) {
     
      const renderServices = () => {
-        return props.barberServices.map((barber, key) => {
+        return props.walkerServices.map((walker, key) => {
             return <ul key={key}>
-                <li id={barber.id} >
+                <li id={walker.id} >
                     <p>
-                        {barber.type}........{barber.price}
+                        {walker.type}........{walker.price}
                     </p>
                 </li>
             </ul>

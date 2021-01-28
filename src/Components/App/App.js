@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import BarberPage from '../../Pages/BarberPage/BarberPage'
-import BarberProfile from '../BarberProfile/BarberProfile'
+import WalkerPage from '../../Pages/WalkerPage/WalkerPage'
+import WalkerProfile from '../WalkerProfile/WalkerProfile'
 import Footer from '../../Components/Footer/Footer'
 import HomePage from '../../Pages/HomePage/HomePage'
 import LoginPage from '../../Pages/LoginPage/LoginPage'
@@ -42,8 +42,8 @@ export default class App extends Component {
           <Switch>
             <Route exact path='/' component={LandingPage} />
             <Route exact path='/homePage' component={HomePage} />
-            < PrivateRoute exact path='/Barbers' component={BarberPage} />
-            <Route exact path='/BarbersProfile/:barberid' component={BarberProfile} />
+            < PrivateRoute exact path='/Walkers' component={WalkerPage} />
+            <Route exact path='/WalkersProfile/:walkerid' component={WalkerProfile} />
             <Route exact path='/Login' component={LoginPage} />
             <PrivateRoute exact path='/Profile' component={ProfilePage} />
             <Route exact path='/Register' component={RegisterPage} />

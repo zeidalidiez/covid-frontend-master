@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
 import AppointmentApiService from '../../services/appointment-api-service'
-import BarberApiService from '../../services/barber-api-service'
+import WalkerApiService from '../../services/walker-api-service'
 import { Spinner } from '../../Components/Utilitys/Utils'
 
 import { TimeButtons, ServiceButtons } from '../Utilitys/Utils'
-import './BarberProfile.css'
+import './WalkerProfile.css'
 
-export default class BarberProfile extends Component {
+export default class WalkerProfile extends Component {
     state = {
-        barberInfo: [],
+        walkerInfo: [],
         serviceSelected: '',
         timeSelected: '',
         hasError: false,
@@ -24,10 +24,10 @@ export default class BarberProfile extends Component {
         },
     }
     componentDidMount() {
-        const { barberid } = this.props.match.params
-        BarberApiService.getBarber(barberid)
+        const { walkerid } = this.props.match.params
+        WalkerApiService.getWalker(walkerid)
             .then(data => {
-                return this.setState({ barberInfo: data ,
+                return this.setState({ walkerInfo: data ,
                 loader:false})
             })
             .catch(err=>{
@@ -60,12 +60,12 @@ export default class BarberProfile extends Component {
 
         const { timeSelected, serviceSelected } = this.state
 
-        const { id } = this.state.barberInfo
+        const { id } = this.state.walkerInfo
 
         const newAppointment = {
             time: timeSelected,
             services_id: serviceSelected,
-            barber_id: id
+            walker_id: id
         }
         this.setState({ error: null })
         AppointmentApiService.postAppointment(newAppointment)
@@ -82,7 +82,7 @@ export default class BarberProfile extends Component {
 
 
     render() {
-        const { first_name } = this.state.barberInfo
+        const { first_name } = this.state.walkerInfo
         const { error } = this.state
         return (
             <div className='profile-container'>

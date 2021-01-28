@@ -30,8 +30,8 @@ export default class NavBar extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/Barbers">
-                Barbers
+              <Link to="/Walkers">
+                Walkers
               </Link>
             </li>
             <li>

@@ -70,7 +70,7 @@ export default class ProfilePage extends Component {
                         <tbody>
                             <tr>
                                 <th>Time</th>
-                                <th>Barber</th>
+                                <th>Walker</th>
                                 <th>Service</th>
                             </tr>
                             {this.renderProfile()}

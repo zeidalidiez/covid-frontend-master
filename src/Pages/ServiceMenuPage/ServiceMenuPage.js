@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
-import BarberApiService from '../../services/barber-api-service'
+import WalkerApiService from '../../services/walker-api-service'
 import { ServiceList, Spinner } from '../../Components/Utilitys/Utils'
 import './ServiceMenuPage.css'
 
 export default class ServiceMenuPage extends Component {
     state={
-        barberServices: [],
+        walkerServices: [],
         error: null,
         loader:true
     }
     componentDidMount() {
-        BarberApiService.getBarberServices()
+        WalkerApiService.getWalkerServices()
             .then(services => {
                 return  this.setState({
-                    barberServices: services,
+                    walkerServices: services,
                     loader: false
                 })
             })
