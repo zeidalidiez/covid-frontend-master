@@ -1,7 +1,7 @@
 import React ,{useContext} from 'react'
 import DemoCreds from '../../Components/DemoCreds/DemoCreds'
-import TokenService from '../../Services/token-service'
-import UserContext from '../../Contexts/UserContext'
+import TokenService from '../../services/token-service'
+import UserContext from '../../contexts/UserContext'
 import { Link, Redirect } from 'react-router-dom'
 
 export default function Landingpage(){

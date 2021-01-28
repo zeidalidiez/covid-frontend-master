@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import BarberListContext from '../../Contexts/BarberListContext'
+import BarberListContext from '../../contexts/BarberListContext'
 import Barber from '../Barber/Barber'
-import BarberApiService from '../../Services/barber-api-service'
+import BarberApiService from '../../services/barber-api-service'
 import { Spinner } from '../../Components/Utilitys/Utils'
 
 export default class BarberList extends Component {

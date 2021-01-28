@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import AppointmentApiService from '../../Services/appointment-api-service'
-import BarberApiService from '../../Services/barber-api-service'
+import AppointmentApiService from '../../services/appointment-api-service'
+import BarberApiService from '../../services/barber-api-service'
 import { Spinner } from '../../Components/Utilitys/Utils'
 
 import { TimeButtons, ServiceButtons } from '../Utilitys/Utils'

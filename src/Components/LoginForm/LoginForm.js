@@ -1,9 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 
-import AuthApiService from '../../Services/auth-api-service'
-import { Spinner } from '../../Components/Utilitys/Utils'
-import UserContext from '../../Contexts/UserContext'
+import AuthApiService from '../../services/auth-api-service'
+import UserContext from '../../contexts/UserContext'
 
 
 export default function LoginForm(props) {

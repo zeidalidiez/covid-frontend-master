@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import AuthApiService from '../../Services/auth-api-service'
-import UserContext from '../../Contexts/UserContext'
+import AuthApiService from '../../services/auth-api-service'
+import UserContext from '../../contexts/UserContext'
 
 export default function DemoCreds(props) {
   const userContext = useContext(UserContext)

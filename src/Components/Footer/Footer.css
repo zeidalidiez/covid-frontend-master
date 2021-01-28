@@ -1,17 +1,17 @@
 footer{
-    background-color: rgba(0, 0, 0,1);
-     text-align: left;
-     width: 100%;
-   
- }
- .footer-container {
-     padding: 0 1rem;
- }
- .footer-container ul {
-     color:var(--white);
-     padding: 0;
-     /* justify-content: center; */
-     list-style: none;
-     /* display: flex; */
-     /* flex-direction: column; */
- } 
+   background-color: rgba(0, 0, 0,1);
+    text-align: left;
+    width: 100%;
+  
+}
+.footer-container {
+    padding: 0 1rem;
+}
+.footer-container ul {
+    color:var(--white);
+    padding: 0;
+    /* justify-content: center; */
+    list-style: none;
+    /* display: flex; */
+    /* flex-direction: column; */
+} 

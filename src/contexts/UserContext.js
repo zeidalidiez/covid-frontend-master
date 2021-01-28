@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TokenService from '../Services/token-service'
+import TokenService from '../services/token-service'
 
 const UserContext = React.createContext({
   user: {},

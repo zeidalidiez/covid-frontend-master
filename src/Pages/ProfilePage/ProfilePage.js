@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import AppointmentApiService from '../../Services/appointment-api-service'
-import AppointmentContext from '../../Contexts/AppointmentContext'
+import AppointmentApiService from '../../services/appointment-api-service'
+import AppointmentContext from '../../contexts/AppointmentContext'
 import './ProfilePage.css'
 
 

@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react'
 
-import BarberApiService from '../../Services/barber-api-service';
+import BarberApiService from '../../services/barber-api-service';
 import { Link } from 'react-router-dom'
 import './Utils.css'
 

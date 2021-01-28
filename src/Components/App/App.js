@@ -12,7 +12,6 @@ import ProfilePage from '../../Pages/ProfilePage/ProfilePage';
 import RegisterPage from '../../Pages/RegisterPage/RegisterPage'
 import ServiceMenuPage from '../../Pages/ServiceMenuPage/ServiceMenuPage'
 
-
 import PrivateRoute from '../PrivateRoute/PrivateRoute'
 import './App.css';
 
@@ -58,4 +57,6 @@ export default class App extends Component {
     )
   }
 }
+
+
 

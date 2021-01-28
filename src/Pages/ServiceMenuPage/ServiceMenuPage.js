@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BarberApiService from '../../Services/barber-api-service'
+import BarberApiService from '../../services/barber-api-service'
 import { ServiceList, Spinner } from '../../Components/Utilitys/Utils'
 import './ServiceMenuPage.css'
 
