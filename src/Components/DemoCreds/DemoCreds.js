@@ -13,8 +13,8 @@ export default function DemoCreds(props) {
 
   const handleDemoLogin = () => {
     return AuthApiService.postLogin({
-      user_name: 'demo',
-      password: 'pass1'
+      user_name: 'demouser',
+      password: 'demopassword'
     })
       .then(res => {
         userContext.processLogin(res.authToken)
