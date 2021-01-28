@@ -1,0 +1,97 @@
+.profile-container{
+    flex:1;
+    background-image: url(/static/media/backgroundpicture.959c450b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: scroll;
+    justify-content: center;
+}
+.profile-section{
+    padding-top:70px;
+    background: var(--blackish);
+    display:flex;
+    flex-direction: column;
+}
+.profile-section form{
+    max-width: 800px;
+    
+}
+.service-list{
+    padding: 0 10px 10px;
+    flex:1;
+    border:none;
+
+}
+.service-space{
+    display: flex;
+    flex-direction: column;
+}
+.time-service-space{
+    display: flex;
+    flex-direction: column;
+}
+.time-list{
+    padding: 0 10px 20px;
+    flex:1;
+    border: none;
+}
+.profile-section .submit-haircut{
+    padding: 35px;
+    width: 100%;
+    font-size: 30px;
+    margin:0;
+    background: var(--blackish);
+    color: white;
+}
+.service-list button{
+    margin:3px;
+    padding:2px;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    color: var(--white);
+}
+.time-service-space button{
+    margin:3px;
+    padding:2px;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    color: var(--white);
+}
+.time-service-space button:focus{
+    outline: none;
+    background:rgba(255,255,255,0.1);
+    
+}
+.service-list button:focus{
+    outline: none;
+    background:rgba(255,255,255,0.1);
+}
+
+.profile-section p {
+    color:var(white);
+    font-size: 22px;
+
+}
+.profile-section h3{
+    margin:0;
+    padding:13px 0;
+    font-size:25px;
+
+}
+.profile-section  h1  {
+    color:var(--white);
+    font-size: 36px;
+    margin:0;
+    padding: 25px 10px;
+}
+.profile-section  h2  {
+    color:var(--white);
+    font-size:32px;
+}
+.error{
+    font-size: 25px;
+    color:var(--white);
+    padding-left:10px;
+    font-weight: 600;
+}

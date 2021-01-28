@@ -1,0 +1,43 @@
+.Barber-section{
+    color: var(--white);
+    background-color:var(--blackish);
+    display:flex;
+    padding-top:70px;
+    flex-direction: column;
+}
+.Barber-section h1{
+    color:var(--white);
+}
+
+.Barber-section ul{
+    padding-left:10px;
+    overflow:scroll;
+}
+
+.Barber-section p {
+    margin: 0;
+    font-size: 18px;
+}
+.Barber-section ul li{
+    list-style: none;
+    max-width: 300px;
+    text-align: left;
+    padding: 0px 0px 10px 10px;
+    font-size: 22px;
+    border: 1px solid var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.Barber-section a {
+    margin-top:8px;
+    font-size: 22px;
+    text-decoration: none;
+    color:white
+}
+.Barber-section a:hover,
+.Barber-section a:active{
+    color: rgba(255, 0, 0, 0.502)
+}
+.Barber-wrapper{
+    margin-top:15px;
+}
