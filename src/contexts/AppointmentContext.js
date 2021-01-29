@@ -19,7 +19,7 @@ export  class AppointmentProvider extends Component {
     serviceSelected: '',
     timeSelected: '',
     error: null,
-    delete: {}
+    delete: () => {}
   }
   setWalkerInfo = walkerInfo => {
     this.setState({ walkerInfo })
