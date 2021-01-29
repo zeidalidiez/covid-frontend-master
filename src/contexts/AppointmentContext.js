@@ -19,7 +19,10 @@ export  class AppointmentProvider extends Component {
     serviceSelected: '',
     timeSelected: '',
     error: null,
-    delete: () => {}
+    }
+
+  delete = serviceDeleteted => {
+    return this.setState({ serviceDeleteted })
   }
   setWalkerInfo = walkerInfo => {
     this.setState({ walkerInfo })
@@ -44,6 +47,8 @@ export  class AppointmentProvider extends Component {
       serviceSelected,
       timeSelected,
       error,
+      serviceDeleteted,
+      
     } = this.state
 
     const value = {
@@ -51,6 +56,7 @@ export  class AppointmentProvider extends Component {
       serviceSelected,
       timeSelected,
       error,
+      delete: this.serviceDeleteted,
       setWalkerInfo: this.setWalkerInfo,
       setServiceType: this.setServiceType,
       setTimeSelected : this.setTimeSelected,
