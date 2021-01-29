@@ -14,7 +14,7 @@ export default class NavBar extends Component {
     return (
       <nav className='NavBar'>
         <div className='logo'>
-          <Link to="/">Zeid Walkers</Link>
+          <Link to="/">Pandemic Dog Walking</Link>
         </div>
         <div className='spacer' />
         <div className='right-nav'>
