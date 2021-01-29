@@ -94,5 +94,24 @@
     padding-left:10px;
     font-weight: 600;
 }
+.submit-haircut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+
+      margin-top: 1.5rem;
+      color: white;
+      background-color: #210b30;
+      font-size: 1.4rem;
+      height: 4.8rem;
+      border-radius: 0.4rem;
+      border: none;
+      padding: 0 2.4rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+   
 
