@@ -58,7 +58,7 @@ This is where users can login with Username and Password to sign into the app.
 
 ---------------------------------------------------------------------------------
 
-### '/dashboard' the dashboard route is private route for signed up users
+### '/dashboard' the dashboard route is private route for signed up users (and demo)
 
 ![Landing](screenshots/LandingPage.png)
 
@@ -66,7 +66,7 @@ This is where users are directed after sign up and login. Users now have full ac
 
 ---------------------------------------------------------------------------------
 
-### '/service' the service route is private route for signed up users 
+### '/service' the service route is private route for signed up users (and demo)
 
 ![Service](screenshots/ServiceMenu.png)
 
@@ -74,7 +74,7 @@ On this page, users view the prices for dog walking for one dog or multiple dogs
 
 ---------------------------------------------------------------------------------
 
-### '/walkers' the service route is private route for signed up users
+### '/walkers' the Walkers route is private route for signed up users (and demo)
 
 ![Walkers](screenshots/Walkers.png)
 
@@ -82,7 +82,7 @@ On this page, users view the prices for dog walking for one dog or multiple dogs
 
  ---------------------------------------------------------------------------------
 
-### '/booking' the service route is private route for signed up users
+### '/booking' the Booking route is private route for signed up users (and demo)
 
 ![Booking](screenshots/Booking.png)
 
@@ -90,7 +90,7 @@ On this page, users view the prices for dog walking for one dog or multiple dogs
 
  --------------------------------------------------------------------------------- 
 
-### '/profile' the service route is private route for signed up users
+### '/profile' the Profile route is private route for signed up users 
 
 ![Profile](screenshots/Profile.png)
 
