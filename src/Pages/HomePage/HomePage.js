@@ -6,8 +6,8 @@ export default class HomePage extends Component {
         return (
             <div className='homePage-container'>
                 <section className='title'>
-                    <h1> Walkershop</h1>
-                    <h3> Welcome to Zeid Walkershop.</h3>
+                    <h1> Dogwalking</h1>
+                    <h3> Welcome to the next day dogwalking service!</h3>
                     <p>
                     We are a service to help people walk their dogs during these uneasy times of COVID. <br />
             Once logged in you'll be able to select from one of our walkers!
