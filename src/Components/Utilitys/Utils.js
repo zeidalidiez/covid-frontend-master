@@ -27,7 +27,7 @@ export class ServiceButtons extends Component {
                 onClick={(e) => this.handleSelectServiceType(e, walker)}
                 key={walker.id} >
                 <h3>{walker.type}</h3>
-                <p>{walker.price} 45min</p>
+                <p>{walker.price} 30min</p>
             </button>
         })
     }
