@@ -1,5 +1,4 @@
 import React ,{useContext} from 'react'
-import DemoCreds from '../../Components/DemoCreds/DemoCreds'
 import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
 import { Link, Redirect } from 'react-router-dom'
@@ -11,14 +10,14 @@ export default function LandingPage() {
       <div className='homePage-container'>
         {TokenService.hasAuthToken() ? <Redirect to="/homePage" /> : <></>}
         <section className='title'>
-          <h1>  Walkershop</h1>
-          <h3> Welcome to Zeid Walkershop.</h3>
-          <p>
-            We are a service to help people walk their dogs during these uneasy times of COVID. <br />
-            Once logged in you'll be able to select from one of our walkers!
-            Just select the name of the walker, pick your Service and Time, then check your profile.
-            Your appointment will be updated! So Login or Sign up and we will take care of all of your dogwalks!!
-          </p>
+        <h1> Dogwalking</h1>
+        <h3> Welcome to the next day dogwalking service!</h3>
+        <p>
+        We are a service to help people walk their dogs during these uneasy times of COVID. <br />
+        Once logged in you'll be able to select from one of our walkers!
+        Just select the name of the walker, pick your Service and Time, then check your profile.
+        Your appointment will be updated! So Login or Sign up and we will take care of all of your dogwalks!!
+         </p> 
           <div className='homePagebutton-container'>
             <button className='homePage-button'>
               <Link to="/Login">
@@ -30,7 +29,6 @@ export default function LandingPage() {
                 Register
               </Link>
             </button>
-            <DemoCreds />
           </div>
         </section>
       </div>
