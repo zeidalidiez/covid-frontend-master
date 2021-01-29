@@ -12,6 +12,7 @@ export default function LandingPage() {
         <section className='title'>
         <h1> Dogwalking</h1>
         <h3> Welcome to the next day dogwalking service!</h3>
+        <h2> Demo credentials : demouser/demopassworD1 </h2>
         <p>
         We are a service to help people walk their dogs during these uneasy times of COVID. <br />
         Once logged in you'll be able to select from one of our walkers!
