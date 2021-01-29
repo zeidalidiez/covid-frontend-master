@@ -6,8 +6,7 @@ export default class HomePage extends Component {
         return (
             <div className='homePage-container'>
                 <section className='title'>
-                    <h1> Walkershop Demo </h1>
-                    <h3> Take a look around the app! </h3>
+                    <h1> Walkershop </h1>
                     <h3> Extended features don't work in Demo Mode.</h3>
                     <p>
                     We are a service to help people walk their dogs during these uneasy times of COVID. <br />
