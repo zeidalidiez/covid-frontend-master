@@ -44,7 +44,7 @@ This is the first page users will land on. Where they can see a demo of our site
 
 ### '/register' sign up page route
 
-[!Register](screenshots/Register.png)
+![Register](screenshots/Register.png)
 
 This is where users can sign up in order to get an authenticated JWT to access the entire website.  If they try access another route without an authenticated JWT they will be redirected back to the login page.
 
@@ -52,7 +52,7 @@ This is where users can sign up in order to get an authenticated JWT to access t
 
 ### '/login' login page route 
 
-[!Login](screenshots/Login.png)
+![Login](screenshots/Login.png)
 
 This is where users can login with Username and Password to sign into the app.
 
