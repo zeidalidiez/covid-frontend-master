@@ -7,6 +7,9 @@
  Server Repo: https://github.com/zeidalidiez/covid-api-master
  
  Client Repo: https://github.com/zeidalidiez/covid-frontend-master
+ 
+user_name: 'demouser',
+password: 'demopassworD1!'
 
 ---------------------------------------------------------------------------------
 ## About:
