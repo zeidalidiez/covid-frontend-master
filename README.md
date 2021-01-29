@@ -33,15 +33,69 @@ We are a service to help people walk their dogs during these uneasy times of COV
 
 ## Routes
 
+
 ### '/' the Landing page route
 
-This is the first page users will land on. Where they can see a demo of our site, sign up, and log in
+![Landing](screenshots/LandingPage.png)
 
-### '/login' login page route && '/signup' sign up page route
+This is the first page users will land on. Where they can see a demo of our site, sign up, and log in.
 
-This is where users can sign up or login in order to get an authenticated JWT to access the entire website, if they try access another route without an authenticated JWT they would be redirected to login page
+---------------------------------------------------------------------------------
+
+### '/register' sign up page route
+
+[!Register](screenshots/Register.png)
+
+This is where users can sign up in order to get an authenticated JWT to access the entire website.  If they try access another route without an authenticated JWT they will be redirected back to the login page.
+
+---------------------------------------------------------------------------------
+
+### '/login' login page route 
+
+[!Login](screenshots/Login.png)
+
+This is where users can login with Username and Password to sign into the app.
+
+---------------------------------------------------------------------------------
 
 ### '/dashboard' the dashboard route is private route for signed up users
+
+![Landing](screenshots/LandingPage.png)
+
 This is where users are directed after sign up and login. Users now have full access to finding dogwalkers, available times, and make an appointment.
+
+---------------------------------------------------------------------------------
+
+### '/service' the service route is private route for signed up users 
+
+![Service](screenshots/ServiceMenu.png)
+
+On this page, users view the prices for dog walking for one dog or multiple dogs.
+
+---------------------------------------------------------------------------------
+
+### '/walkers' the service route is private route for signed up users
+
+![Walkers](screenshots/Walkers.png)
+
+ On this page, users view the available dogwalkers in their area. 
+
+ ---------------------------------------------------------------------------------
+
+### '/booking' the service route is private route for signed up users
+
+![Booking](screenshots/Booking.png)
+
+ On this page, users select the amount of dogs to walk, and the time they need to be walked and book their appointment.
+
+ --------------------------------------------------------------------------------- 
+
+### '/profile' the service route is private route for signed up users
+
+![Profile](screenshots/Profile.png)
+
+ On this page, users view their profile, which is their selected Time, Walker, and Service.  
+
+
 
 
