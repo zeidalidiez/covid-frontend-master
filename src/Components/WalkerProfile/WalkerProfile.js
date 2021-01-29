@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import AppointmentApiService from '../../services/appointment-api-service'
 import WalkerApiService from '../../services/walker-api-service'
-import { Spinner } from '../../Components/Utilitys/Utils'
+import { Spinner } from '../Utilitys/Utils'
 
 import { TimeButtons, ServiceButtons } from '../Utilitys/Utils'
 import './WalkerProfile.css'
@@ -103,7 +103,7 @@ export default class WalkerProfile extends Component {
                         <div role='alert'>
                             {error && <p className='error'>{error}</p>}
                         </div>
-                        <button className='submit-walker' type='submit'>Review/Book</button>
+                        <button className='submit-haircut' type='submit'>Review/Book</button>
                     </form>}
                 </section>
             </div>
