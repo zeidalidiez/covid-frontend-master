@@ -5,6 +5,7 @@
     display:flex;
     padding-top:70px;
     flex-direction: column;
+    overflow: hidden;
 }
 .Walker-section h1{
     color:var(--white);
@@ -12,7 +13,7 @@
 
 .Walker-section ul{
     padding-left:10px;
-    overflow:scroll;
+    overflow:auto;
 }
 
 .Walker-section p {
