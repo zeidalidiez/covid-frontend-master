@@ -1,4 +1,4 @@
 export default {
-    API_ENDPOINT:'http://localhost:8000/covidapi',
+    API_ENDPOINT:'https://coviddogwalking.herokuapp.com/covidapi',
     TOKEN_KEY: 'spaced-repetition-jwt-secret'
 }
