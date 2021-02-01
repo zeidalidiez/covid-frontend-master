@@ -5,7 +5,6 @@
     display:flex;
     padding-top:70px;
     flex-direction: column;
-    overflow: hidden;
 }
 .Walker-section h1{
     color:var(--white);
@@ -13,14 +12,12 @@
 
 .Walker-section ul{
     padding-left:10px;
-    overflow:auto;
+    overflow:scroll;
 }
 
 .Walker-section p {
     margin: 0;
-    font-size: 28px;
-    overflow-wrap: break-word;
-
+    font-size: 18px;
 }
 .Walker-section ul li{
     list-style: none;
@@ -44,15 +41,4 @@
 }
 .Walker-wrapper{
     margin-top:15px;
-}
-
-@media all and (max-width: 500px){
-    .Walker-section p {
-        margin: 0;
-        font-size: 12px;
-        font-family: 'Helvetica Neue', sans-serif;
-        overflow-wrap: break-word;
-        overflow: auto;
-    }
-
 }

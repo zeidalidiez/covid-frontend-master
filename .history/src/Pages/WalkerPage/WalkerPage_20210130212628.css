@@ -18,7 +18,7 @@
 
 .Walker-section p {
     margin: 0;
-    font-size: 28px;
+    font-size: 18px;
     overflow-wrap: break-word;
 
 }
@@ -49,7 +49,7 @@
 @media all and (max-width: 500px){
     .Walker-section p {
         margin: 0;
-        font-size: 12px;
+        font-size: 18px;
         font-family: 'Helvetica Neue', sans-serif;
         overflow-wrap: break-word;
         overflow: auto;
