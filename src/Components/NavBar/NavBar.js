@@ -2,14 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import { SideNavButton } from '../Utilitys/Utils'
-import UserContext from '../../contexts/UserContext'
 import './NavBar.css'
 
 export default class NavBar extends Component {
-  static contextType = UserContext
-  handleLogout = () => {
-    this.context.processLogout()
-  }
   render() {
     return (
       <nav className='NavBar'>
@@ -37,18 +32,6 @@ export default class NavBar extends Component {
             <li>
               <Link to='/Profile'>
                 Profile
-              </Link>
-            </li>
-            <li>
-              <Link to="/Login">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={this.handleLogout}
-                to="/">
-                Logout
               </Link>
             </li>
           </ul>

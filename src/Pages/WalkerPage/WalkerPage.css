@@ -9,6 +9,7 @@
 }
 .Walker-section h1{
     color:var(--white);
+    padding-left:10px;
 }
 
 .Walker-section ul{
@@ -20,6 +21,7 @@
     margin: 0;
     font-size: 28px;
     overflow-wrap: break-word;
+    padding-left:10px;
 
 }
 .Walker-section ul li{

@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
+import UserContext from '../../contexts/UserContext'
+import { Link } from 'react-router-dom'
 import './HomePage.css'
 
+
 export default class HomePage extends Component {
+    static contextType = UserContext
+    handleLogout = () => {
+      this.context.processLogout()
+    }
     render() {
         return (
             <div className='homePage-container'>
@@ -14,7 +21,15 @@ export default class HomePage extends Component {
             Just select the name of the walker, pick your Service and Time, then check your profile.
             Your appointment will be updated! So Login or Sign up and we will take care of all of your dogwalks!!
                     </p>
+                    <button className="homePage-button">
+                <Link
+                onClick={this.handleLogout}
+                to="/">
+                Logout
+              </Link>
+              </button>
                 </section>
+   
             </div>
         )
     }
